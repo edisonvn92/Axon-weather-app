@@ -1,0 +1,12 @@
+$baseSize: 10;
+
+@mixin font-size($max) {
+    @while ($baseSize < $max) {
+        .fs-#{$baseSize} {
+            font-size: #{$baseSize}px !important;
+        }
+        $baseSize: $baseSize + 1;
+    }
+}
+
+@include font-size(50)

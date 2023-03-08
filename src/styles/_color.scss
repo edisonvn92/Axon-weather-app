@@ -1,0 +1,34 @@
+$white: #fff;
+$yellow: #FFCC21;
+$orange: #FF963C;
+$dark-orange: #EA6C00;
+$blue: #8FE9D0;
+$black-600: #2E2E2E;
+$black-500: #414141;
+$gray: #777777;
+
+$colors: (
+    'white': $white,
+    'yellow': $yellow,
+    'orange': $orange,
+    'dark-orange': $dark-orange,
+    'blue': $blue,
+    'black-600': $black-600,
+    'black-500': $black-500,
+    'gray': $gray,
+);
+
+
+@mixin color() {
+    @each $colorText, $color in $colors {
+        .text-#{$colorText} {
+            color: #{$color} !important;
+        }
+        .bg-#{$colorText} {
+            background-color: #{$color} !important;
+        }
+    }
+}
+
+
+@include color();

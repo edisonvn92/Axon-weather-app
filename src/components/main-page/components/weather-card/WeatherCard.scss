@@ -1,0 +1,15 @@
+@import '../../../../styles/color';
+
+.weather-card {
+    border: 1px solid $orange;
+    padding: 10px;
+    padding-bottom: 0;
+    border-radius: 10px;
+    background-color: #FFFFF0;
+    // height: 175px;
+    img {
+        width: 100%;
+        max-width: 70px;
+    }
+
+}

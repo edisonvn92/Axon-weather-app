@@ -1,0 +1,10 @@
+@import "../src/styles/color";
+@import "../src/styles/size";
+@import "../src/styles/spacing";
+
+@import "~bootstrap/scss/bootstrap";
+
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: $black-600;
+}
